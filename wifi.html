@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="logo container d-flex justify-content-between align-items-center">
+        <img src="images/small_logo.jpg" alt="VF logo">
+        <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+    </div>
+    <div class="navbar">
+        <div class="container">
+            <ul class="navbar-nav flex-direction flex-row">
+                <li>
+                    <a href="home.html"><i class="fa-solid fa-house"></i> Home </a>
+                </li>
+                <li>
+                    <a href="network.html"><i class="fa-solid fa-globe"></i> Network settings</a>
+                </li>
+                <li class="active">
+                    <a href="wifi.html"><i class="fa-solid fa-wifi"></i> WiFi settings </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-network-wired"></i> Devices </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-wrench"></i> Tools </a> 
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i> Settings </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="sidebar col-3 pt-5">
+                <ul>
+                    <li class="active">
+                        Wi-Fi Basic Settings
+                    </li>
+                    <li>
+                        Guest Wi-Fi
+                    </li>
+                </ul>
+            </div>
+            <div class="wifi-page col-9 p-5">
+                <h3>Wi-Fi Basic Settings</h3>
+                <hr>
+                <div class=" p-5">
+                    <div class="row">
+                        <span class="col-5 p-2">Wi-Fi</span>
+                        <label class="toggle-button col-7">
+                            <input type="checkbox" checked class="toggle-checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="col-5 p-2" for="ssid">Wi-Fi name (SSID)</label>
+                        <input class="col-7 rounded-5 p-2 ps-4" type="text" value="Home">
+                    </div>
+                    <div class="row">
+                        <label class="col-5 p-2">Security Mode </label>
+                        <select name="security" id="security" class="col-7 rounded-5 p-2 px-4">
+                            <option value="None (open)">None (open)</option>
+                            <option value="WEP">WEP</option>
+                            <option selected value="WPA2-PSK">WPA2-PSK</option>
+                            <option  value="WPA/WPA2-PSK">WPA/WPA2-PSK</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label class="col-5 p-2" for="ssid">Wi-Fi password</label>
+                        <input class="col-7 rounded-5 p-2 ps-4" type="password" value="123456789">
+                    </div>
+                    <a href="home.html"><button class="d-block col-7 rounded-5 p-2 ps-4 ms-auto">Save</button></a>
+                    <a class="d-block col-6 rounded-5 p-2 ps-4 ms-auto" href="#">More Wi-Fi settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
